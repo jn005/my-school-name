@@ -1,0 +1,3 @@
+<?php
+$usercode=$_POST['']
+?>

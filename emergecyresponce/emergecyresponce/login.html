@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>login page</title>
+</head>
+<body>
+	<style type="text/css">
+		#nav{
+	background-color: #A8A277;
+	margin-top: 10px;
+	padding: 10px 0px 5px 0px;}
+	li {
+	display: inline;
+	padding: 5px;
+	}
+	body{
+		background-image: url('image1.png');
+	}
+	#s1{
+		width: 100px;
+		border: solid 2px;
+		border-radius: 10px;
+	}
+	#s1:hover{
+		background-color: green;
+	}
+	#s2:hover{
+		background-color: green;
+	}
+	#s2{
+		width: 200px;
+		border: solid 2px;
+		border-radius: 10px;
+	}
+	</style>
+<div id="nav">
+ <ul>
+ <li><a href="homepage.html">HOME</a></li>
+ <li><a href="">SERVICES</a></li>
+ <li><a href="">ABOUT</a></li>
+ <li><a href="">CONTACT</a></li>
+ </ul>
+ </div>
+ <fieldset>
+ 	<legend><h3>Login Here</h3></legend>
+ 	<form method="POST" action="login.php" >
+ 		<label>Enter Username</label><br>
+ 		<input type="password" name="username" required='required'><br><br>
+ 		<label>Enter Password</label><br>
+ 		<input type="password" name="password" required='required'><br><br>
+ 		<input type="submit" name="login" id="s1" value='Login'><br><br>
+ 		<input type="submit" name="login" id="s2" value='Forget Password'>
+ 	</form>
+ </fieldset>
+</body>
+</body>
+</html>

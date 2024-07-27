@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<style type='text/css'>
+	#nav{
+	background-color: #A8A277;
+	margin-top: 10px;
+	padding: 10px 0px 5px 0px;}
+	li {
+	display: inline;
+	padding: 5px;
+	}
+	body{
+		background-image: url('image1.png');
+	}
+	table,td,th{
+		border: solid 1px;
+		background-color: white;
+	}
+	#s1{
+		width: 100px;
+		border: solid 2px;
+		border-radius: 10px;
+	}
+	#s1:hover{
+		background-color: green;
+	}
+	</style>
+<div id='nav'>
+ <ul>
+ <li><a href='homepage.html'>HOME</a></li>
+ </ul>
+ </div>
+<fieldset>
+	<legend>ENTER HOSPITAL DETAILS BELOW</legend>
+	<form method="POST" action="add_hospital.php">
+	<label>NAME:</label><br>
+	<input type="text" name="name" required='required'><br><br>
+	<label>TYPE:</label><br>
+	<select name="type" required='required'>
+		<option value="general">GENERAL</option>
+		<option value="speciality">SPECIALITY</option>
+	</select><br><br>
+	<label>OWNERSHIP:</label><br>
+	<select name="ownership" required='required'>
+		<option value="government">GOVERNMENT</option>
+		<option value="private">PRIVATE</option>
+	</select><br><br>
+	<label>LEVEL:</label><br>
+	<select name="level" required='required'>
+		<option value="primary">PRIMARY LEVEL</option>
+		<option value="secondary">SECONDARY LEVEL</option>
+		<option value="tertiary">TERTIARY LEVEL</option>
+		<option value="quaternary">QUATERNARY LEVEL</option>
+	</select><br><br>
+	<label>PHONE:</label><br>
+	<input type="number" name="phone" required='required'><br><br>
+	<label>EMAIL:</label><br>
+	<input type="email" name="email" ><br><br>
+	<label>WORKING HOURS:</label><br>
+	<select name="working" required='required'>
+		<option value="6">6-HOURS</option>
+		<option value="8">8-HOURS</option>
+		<option value="12">12-HOURS</option>
+		<option value="24">24-HOURS</option>
+	</select><br><br>
+	<label>COUNTY:</label><br>
+	<input type="text" name="county" required='required'><br><br>
+	<label>SUB-COUNTY:</label><br>
+	<input type="text" name="sub_county" required='required'><br><br>
+	<label>LOCATION:</label><br>
+	<input type="text" name="location" required='required'><br><br>
+	<label>SUB-LOCATION:</label><br>
+	<input type="text" name="sub_location" required='required'><br><br>
+	<label>VILLAGE:</label><br>
+	<input type="text" name="village" required='required'><br><br>
+	<label>LAND MARK:</label><br>
+	<textarea rows="4" cols="50" name="landmark" required='required' placeholder="maximum of 50 letters"></textarea><br><br>
+	<input type="submit" id=s1 value="Save">
+	</form>
+</fieldset>
+ </body>
+</html>
